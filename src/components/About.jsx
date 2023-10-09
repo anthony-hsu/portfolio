@@ -5,6 +5,7 @@ function About() {
   return (
     <div className="about-container">
       <Card className="about-image-card" elevation={20} square>
+        <h1 className="about-name">Anthony Hsu</h1>
         <img src={imageUrl} className="about-image" />
       </Card>
       <Card className="about-text-card" elevation={10} square>
