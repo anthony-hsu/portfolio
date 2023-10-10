@@ -20,9 +20,9 @@ function About() {
             culpa qui officia deserunt mollit anim id est laborum.
           </p>
           <div className="about-icon-container">
-            <i className="devicon-github-original colored about-icon"></i>
-            <i className="devicon-linkedin-plain about-icon"></i>
-            <i className="devicon-twitter-original about-icon"></i>
+            <i className="devicon-github-original colored about-icon icon"></i>
+            <i className="devicon-linkedin-plain about-icon icon"></i>
+            <i className="devicon-twitter-original about-icon icon"></i>
           </div>
       </Card>
     </div>

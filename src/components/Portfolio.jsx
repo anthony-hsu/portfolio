@@ -7,8 +7,8 @@ const Portfolio = () => {
   };
   return (
     <div className="portfolio">
-      <h1>My Portfolio</h1>
-      <div className="projects">{projectsData.map(showProject)}</div>
+      <h1 className="portfolio-title">My Projects</h1>
+      <div className="projects-grid">{projectsData.map(showProject)}</div>
     </div>
   );
 };

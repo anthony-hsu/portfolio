@@ -1,28 +1,30 @@
 import { Card, CardActionArea, CardContent, CardMedia } from "@mui/material";
+import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 import PropTypes from "prop-types";
 
 const Project = ({ title, description, githubLink, liveLink, image }) => {
-  const openLiveLink = () => {
-    window.open(liveLink);
+  const openLink = (link) => {
+    window.open(link);
   };
 
   return (
-    <div className="project">
-      <div className="project-info">
-      <a href={githubLink} target="_blank" rel="noopener noreferrer">
-        {githubLink}
-      </a>
-      </div>
-      <Card className="project-card">
-        <CardActionArea onClick={openLiveLink}>
-          <CardMedia className="project-image" component="img" image={image} />
-          <CardContent className="project-contents">
-            <h1>{title}</h1>
-            <p>{description}</p>
-          </CardContent>
-        </CardActionArea>
-      </Card>
-    </div>
+    <Card className="project-card" elevation={5}>
+      <CardActionArea onClick={() => openLink(liveLink)} className="project-action-area">
+        <CardMedia className="project-image" component="img" image={image} />
+      </CardActionArea>
+      <CardContent className="project-contents">
+        <div className="project-first-row">
+          <h1 className="project-title">{title}</h1>
+          <div className="project-icons">
+            <i className="devicon-github-original colored project-icon icon" onClick={() => openLink(githubLink)}></i>
+            <OpenInNewIcon className="icon project-icon" onClick={() => openLink(liveLink)}/>
+          </div>
+        </div>
+        <div className="project-second-row">
+          <p>{description}</p>
+        </div>
+      </CardContent>
+    </Card>
   );
 };
 

@@ -4,7 +4,9 @@ body {
 }
 
 .App {
-  font-family: 'Roboto', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: "Roboto", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
   text-align: center;
 }
 
@@ -36,7 +38,9 @@ body {
   margin: 0;
   color: white;
   text-shadow: 2px 2px 3px black;
-  font-family: 'Playfair Display', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', serif;
+  font-family: "Playfair Display", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    serif;
   font-size: 3.5vw;
   bottom: 1rem;
   left: 0;
@@ -56,12 +60,16 @@ body {
 
 .about-text-title {
   margin: 0;
-  font-family: 'Playfair Display', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', serif;
+  font-family: "Playfair Display", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    serif;
   font-size: 2.5rem;
 }
 
 .about-text-body {
-  font-family: 'Roboto', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: "Roboto", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
   font-weight: 200;
   font-size: 1.5rem;
 }
@@ -77,42 +85,86 @@ body {
   font-size: 2rem;
 }
 
-.about-icon:hover {
+.project-icon {
+  font-size: 1rem;
+}
+
+.icon:hover {
   cursor: pointer;
 }
 
-.project {
-  padding: 2rem;
-  display: flex;
-  flex-direction: row;
+.projects-grid {
+  margin: 2rem 5rem 5rem 5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-auto-rows: 500px;
+  gap: 2rem;
   justify-content: center;
-  align-items: center;
 }
 
-.project-info {
-  flex: 1 0 50%;
+.portfolio-title {
+  margin-top: 2rem;
+  margin-left: 5rem;
+  font-family: "Playfair Display", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    serif;
+  font-size: 2.5rem;
+  text-align: left;
 }
 
-.project-card {
-  flex: 1 0 50%;
-  width: 600px;
+.project-action-area {
+  height: 60%;
 }
 
 .project-image {
-  height: 400px;
+  height: 100%;
   object-position: top;
 }
 
 .project-contents {
-  height: 80px;  
+  height: calc(40% - 40px);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: flex-start;
-  gap: 1rem;
 }
 
-.project-contents * {
-  padding: 0;
+.project-first-row {
+  flex: 1 0 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project-title {
   margin: 0;
+  font-family: "Playfair Display", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    serif;
+  font-size: 1.75rem;
+}
+
+.project-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.project-icon {
+  font-size: 1.4rem;
+}
+
+.project-second-row {
+  flex: 1 0 80%;
+  text-align: left;
+}
+
+.project-second-row p {
+  font-family: "Roboto", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  font-weight: 300;
+  font-size: 1.25rem;
 }
