@@ -1,4 +1,3 @@
-export const aboutImageUrl = new URL("./assets/anthony_hsu.jpg", import.meta.url).href;
 const cvImageUrl = new URL("./assets/cv-builder.png", import.meta.url).href;
 
 const projects = [

@@ -1,8 +1,7 @@
 import { Card } from "@mui/material";
-import { aboutImageUrl } from "../projectsData";
 
 function About() {
-  // const imageUrl = new URL("../assets/anthony_hsu.jpg", import.meta.url).href;
+  const imageUrl = new URL("../assets/anthony_hsu.jpg", import.meta.url).href;
   const githubLink = "https://github.com/anthony-hsu/";
   const linkedinLink = "https://www.linkedin.com/in/anthony-hsu-73a28985/";
 
@@ -14,7 +13,7 @@ function About() {
     <div className="about-container">
       <Card className="about-image-card" elevation={20} square>
         <h1 className="about-name">Anthony Hsu</h1>
-        <img src={aboutImageUrl} className="about-image" />
+        <img src={imageUrl} className="about-image" />
       </Card>
       <Card className="about-text-card" elevation={10} square>
         <h1 className="about-text-title">About Me</h1>
