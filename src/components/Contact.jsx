@@ -1,3 +1,6 @@
+import MailOutlineIcon from "@mui/icons-material/MailOutline";
+import PhoneIcon from '@mui/icons-material/Phone';
+
 function Contact() {
   const imageUrl = new URL("../assets/contact-photo.jpg", import.meta.url).href;
   const githubLink = "https://github.com/anthony-hsu/";
@@ -16,15 +19,19 @@ function Contact() {
         </p>
         <div className="contact-address">
           <p className="contact-address-street contact-body">123 Fake Street</p>
-          <p className="contact-address-city contact-body">San Diego, California 92103</p>
+          <p className="contact-address-city contact-body">
+            San Diego, California 92103
+          </p>
         </div>
         <div className="contact-phone">
-          {/* icon */}
+          <PhoneIcon fontSize="large" />
           <p className="contact-phone-number contact-body">123-456-7890</p>
         </div>
         <div className="contact-email">
-          {/* icon */}
-          <p className="contact-email-address contact-body">anthhsu@gmail.com</p>
+          <MailOutlineIcon fontSize="large" />
+          <p className="contact-email-address contact-body">
+            anthhsu@gmail.com
+          </p>
         </div>
         <div className="contact-icons">
           <i
@@ -39,8 +46,7 @@ function Contact() {
         </div>
       </div>
       <div className="contact-image-container">
-
-      <img src={imageUrl} className="contact-image" />
+        <img src={imageUrl} className="contact-image" />
       </div>
     </div>
   );
