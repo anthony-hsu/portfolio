@@ -1,4 +1,5 @@
 const cvImageUrl = new URL("./assets/cv-builder.png", import.meta.url).href;
+const memoryGameUrl = new URL("./assets/memory-game.png", import.meta.url).href;
 
 const projects = [
   {
@@ -22,8 +23,7 @@ const projects = [
   {
     title: "Memory Card Game",
     description: "Test your memory with this fun game. Can you choose them all?",
-    image:
-      "https://screenshot-proxy.netlify.app/f_avif,fit_cover,s_336x210/https://d33wubrfki0l68.cloudfront.net/6510d331560ecc0008c6168d/screenshot_2023-09-25-00-24-40-0000.png",
+    image: memoryGameUrl,
     githubLink: "https://github.com/anthony-hsu/memory-card-game",
     liveLink: "https://memory-card-game-anthony-hsu.netlify.app",
   },
