@@ -256,7 +256,264 @@ body {
   font-size: 3rem;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 1080px) {
+  .about-container {
+    background-color: green;
+    background-image: linear-gradient(-15deg, white 35%, green 35%);
+    
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 8vh);
+    padding: 3rem;
+    height: auto;
+    display: grid;
+  }
+
+  .about-image-card {
+    grid-column: 1 / 5;
+    grid-row: 1 / 7;
+    z-index: 1;
+    position: relative;
+  }
+
+  .about-image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+  }
+
+  .about-name {
+    position: absolute;
+    margin: 0;
+    color: white;
+    text-shadow: 2px 2px 3px black;
+    font-family: "Playfair Display", system-ui, -apple-system,
+      BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+      "Open Sans", "Helvetica Neue", serif;
+    font-size: 3.5vw;
+    bottom: 1rem;
+    left: 0;
+    right: 0;
+  }
+
+  .about-text-card-desktop {
+    padding: 5%;
+    grid-column: 2 / 9;
+    grid-row: 2 / 9;
+    z-index: 0;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .about-text-card-mobile {
+    display: none;
+  }
+
+  .about-text-title {
+    margin: 0;
+    font-family: "Playfair Display", system-ui, -apple-system,
+      BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+      "Open Sans", "Helvetica Neue", serif;
+    font-size: 2.5rem;
+  }
+
+  .about-text-body {
+    font-family: "Roboto", system-ui, -apple-system, BlinkMacSystemFont,
+      "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+      "Helvetica Neue", sans-serif;
+    font-weight: 200;
+    font-size: 1.5rem;
+  }
+
+  .about-icon-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 1rem;
+  }
+
+  .about-icon {
+    font-size: 2rem;
+  }
+
+
+
+
+
+  
+  .project-icon {
+    font-size: 1rem;
+  }
+
+  .icon:hover {
+    cursor: pointer;
+  }
+
+  .projects-grid {
+    margin: 2rem 3rem;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
+    grid-auto-rows: 400px;
+    gap: 2rem;
+    justify-content: center;
+  }
+
+  .portfolio-title {
+    margin-top: 2rem;
+    margin-left: 3rem;
+    font-family: "Playfair Display", system-ui, -apple-system,
+      BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+      "Open Sans", "Helvetica Neue", serif;
+    font-size: 2.5rem;
+    text-align: left;
+  }
+
+  .project-action-area {
+    height: 60%;
+  }
+
+  .project-image {
+    height: 100%;
+    object-position: top;
+  }
+
+  .project-contents {
+    height: calc(40% - 40px);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .project-first-row {
+    flex: 1 0 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .project-title {
+    margin: 0;
+    font-family: "Playfair Display", system-ui, -apple-system,
+      BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+      "Open Sans", "Helvetica Neue", serif;
+    font-size: 1.25rem;
+  }
+
+  .project-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .project-icon {
+    font-size: 1.4rem;
+  }
+
+  .project-second-row {
+    flex: 1 0 80%;
+    text-align: left;
+  }
+
+  .project-second-row p {
+    font-family: "Roboto", system-ui, -apple-system, BlinkMacSystemFont,
+      "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+      "Helvetica Neue", sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+  }
+
+  .contact-container {
+    background-color: rgb(50, 150, 200);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 2rem;
+  }
+
+  .contact-image-container {
+    grid-column-start: 2;
+    padding: 0;
+  }
+
+  .contact-image {
+    height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    box-shadow: 5px 5px 10px rgb(50, 50, 50);
+  }
+
+  .contact-text {
+    padding: 0;
+    grid-column-start: 1;
+    text-align: left;
+    color: white;
+  }
+
+  .contact-body {
+    font-family: "Roboto", system-ui, -apple-system, BlinkMacSystemFont,
+      "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+      "Helvetica Neue", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin: 0;
+    padding-right: 2rem;
+  }
+
+  .contact-title {
+    margin: 0;
+    font-family: "Playfair Display", system-ui, -apple-system,
+      BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+      "Open Sans", "Helvetica Neue", serif;
+    font-size: 3rem;
+    text-shadow: 1px 1px 1px black;
+  }
+
+  .contact-message {
+    margin-top: 3rem;
+  }
+
+  .contact-address {
+    margin-top: 3rem;
+  }
+
+  .contact-phone {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .contact-email {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .contact-icons {
+    margin-top: 4rem;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .contact-icons * {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 560px) {
   .about-container {
     padding: 0;
     height: 100%;
@@ -264,7 +521,7 @@ body {
     grid-template-columns: auto;
     grid-template-rows: auto;
   }
-  
+
   .about-image-card {
     margin: 2rem;
     position: relative;
@@ -279,16 +536,16 @@ body {
     object-fit: cover;
     object-position: top;
   }
-  
+
   .about-name {
     position: absolute;
     text-align: left;
     margin: 1rem;
     color: white;
     text-shadow: 2px 2px 3px black;
-    font-family: "Playfair Display", system-ui, -apple-system, BlinkMacSystemFont,
-      "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-      serif;
+    font-family: "Playfair Display", system-ui, -apple-system,
+      BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+      "Open Sans", "Helvetica Neue", serif;
     font-size: 18vw;
     bottom: 0;
   }
@@ -299,34 +556,34 @@ body {
 
   .about-text-card-mobile {
     display: block;
-    padding: 1rem;
+    padding: 2rem;
     text-align: left;
   }
-  
+
   .about-text-title {
     text-align: center;
     margin: 0;
-    font-family: "Playfair Display", system-ui, -apple-system, BlinkMacSystemFont,
-      "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-      serif;
+    font-family: "Playfair Display", system-ui, -apple-system,
+      BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+      "Open Sans", "Helvetica Neue", serif;
     font-size: 3rem;
   }
-  
+
   .about-text-body {
     font-family: "Roboto", system-ui, -apple-system, BlinkMacSystemFont,
-      "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-      sans-serif;
+      "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+      "Helvetica Neue", sans-serif;
     font-weight: 200;
     font-size: 1.5rem;
   }
-  
+
   .about-icon-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 1rem;
   }
-  
+
   .about-icon {
     font-size: 2.5rem;
   }
@@ -334,97 +591,115 @@ body {
   .project-icon {
     font-size: 1rem;
   }
-  
+
   .icon:hover {
     cursor: pointer;
   }
-  
+
   .portfolio-title {
     margin-top: 5rem;
-    margin-left: 1rem;
+    margin-left: 2rem;
+  }
+
+  .projects-grid {
+    margin: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 400px;
+    gap: 2rem;
+    justify-content: center;
+  }
+
+  .project-title {
+    font-size: 1.2rem;
+  }
+
+  .project-second-row p {
+    font-size: 1rem;
   }
 
   .project-icon {
     font-size: 1.4rem;
   }
-  
+
   .contact-container {
     background-color: rgb(50, 150, 200);
     display: block;
+    padding: 0;
   }
-  
+
   .contact-image-container {
     margin: 0;
     padding: 2rem;
   }
-  
+
   .contact-image {
     max-height: 100%;
     max-width: 100%;
     box-shadow: 5px 5px 10px rgb(50, 50, 50);
   }
-  
+
   .contact-text {
-    padding: 5rem;
-    text-align: left;
+    padding: 3rem;
+    text-align: center;
     color: white;
   }
-  
+
   .contact-body {
     font-family: "Roboto", system-ui, -apple-system, BlinkMacSystemFont,
-      "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-      sans-serif;
-    font-size: 1.75rem;
+      "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+      "Helvetica Neue", sans-serif;
+    font-size: 1.25rem;
     font-weight: 300;
     margin: 0;
   }
-  
+
   .contact-title {
     margin: 0;
-    font-family: "Playfair Display", system-ui, -apple-system, BlinkMacSystemFont,
-      "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-      serif;
-    font-size: 3.5rem;
+    font-family: "Playfair Display", system-ui, -apple-system,
+      BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+      "Open Sans", "Helvetica Neue", serif;
+    font-size: 2.5rem;
     text-shadow: 1px 1px 1px black;
   }
-  
+
   .contact-message {
     margin-top: 3rem;
   }
-  
+
   .contact-address {
     margin-top: 3rem;
   }
-  
+
   .contact-phone {
     margin-top: 1rem;
     display: flex;
     flex-direction: row;
     gap: 1rem;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
   }
-  
+
   .contact-email {
     margin-top: 1rem;
     display: flex;
     flex-direction: row;
     gap: 1rem;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
   }
-  
+
   .contact-icons {
     margin-top: 4rem;
     color: black;
     display: flex;
     flex-direction: row;
     gap: 1rem;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
   }
-  
+
   .contact-icons * {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 }
