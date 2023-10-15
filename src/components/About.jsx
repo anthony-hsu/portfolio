@@ -16,7 +16,19 @@ function About() {
           <h1 className="about-name">Anthony Hsu</h1>
           <img src={imageUrl} className="about-image" />
         </Card>
+        <h1 className="about-name-tablet">Anthony Hsu</h1>
         <Card className="about-text-card-desktop" elevation={10} square>
+        <div className="about-icon-container-tablet">
+            <i
+              className="devicon-github-original colored about-icon icon"
+              onClick={() => openLink(githubLink)}
+            ></i>
+            <i
+              className="devicon-linkedin-plain about-icon icon"
+              onClick={() => openLink(linkedinLink)}
+            ></i>
+            <i className="devicon-twitter-original about-icon icon"></i>
+          </div>
           <h1 className="about-text-title">About Me</h1>
           <p className="about-text-body">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
