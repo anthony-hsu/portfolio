@@ -1,5 +1,6 @@
 const cvImageUrl = new URL("./assets/cv-builder.png", import.meta.url).href;
 const memoryGameUrl = new URL("./assets/memory-game.png", import.meta.url).href;
+const wordGameUrl = new URL("./assets/word-game.png", import.meta.url).href;
 
 const projects = [
   {
@@ -33,6 +34,13 @@ const projects = [
     image: cvImageUrl,
     githubLink: "https://github.com/anthony-hsu/cv-project",
     liveLink: "https://cv-builder-anthony-hsu.netlify.app",
+  },
+  {
+    title: "Wordle Clone",
+    description: "Try your best to guess the word! Now with the ability to configure word length and number of attempts.",
+    image: wordGameUrl,
+    githubLink: "https://github.com/anthony-hsu/word-game",
+    liveLink: "https://word-game-anthony-hsu.netlify.app",
   },
 ];
 
