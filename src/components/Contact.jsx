@@ -14,18 +14,15 @@ function Contact() {
       <div className="contact-text">
         <h1 className="contact-title">Contact Me</h1>
         <p className="contact-message contact-body">
-          Please get in touch if you think our work could be mutually
-          beneficial!
+          {`Let's get in touch!`}
         </p>
-        <div className="contact-address">
+        {/* <div className="contact-address">
           <p className="contact-address-street contact-body">123 Fake Street</p>
-          <p className="contact-address-city contact-body">
-            San Diego, California 92103
-          </p>
-        </div>
+          <p className="contact-address-city contact-body">San Diego, California 92103</p>
+        </div> */}
         <div className="contact-phone">
           <PhoneIcon fontSize="large" />
-          <p className="contact-phone-number contact-body">123-456-7890</p>
+          <p className="contact-phone-number contact-body">(281) 935-6783</p>
         </div>
         <div className="contact-email">
           <MailOutlineIcon fontSize="large" />
@@ -35,14 +32,14 @@ function Contact() {
         </div>
         <div className="contact-icons">
           <i
-            className="devicon-github-original colored about-icon icon"
+            className="devicon-github-original about-icon icon"
             onClick={() => openLink(githubLink)}
           ></i>
           <i
             className="devicon-linkedin-plain about-icon icon"
             onClick={() => openLink(linkedinLink)}
           ></i>
-          <i className="devicon-twitter-original about-icon icon"></i>
+          {/* <i className="devicon-twitter-original about-icon icon"></i> */}
         </div>
       </div>
       <div className="contact-image-container">
